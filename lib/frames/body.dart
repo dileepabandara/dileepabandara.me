@@ -1,5 +1,6 @@
-import '../constant_values.dart';
 import 'package:flutter/material.dart';
+
+import '../theme/constant_values.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);
