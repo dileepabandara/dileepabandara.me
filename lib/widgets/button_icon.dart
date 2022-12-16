@@ -12,8 +12,8 @@ class ButtonIcon {
   ButtonIcon(
       {required this.name,
       required this.url,
-      this.height = 24.0,
-      this.width = 24.0});
+      this.height = 30.0,
+      this.width = 30.0});
 
   Widget returnButton() {
     return MouseRegion(

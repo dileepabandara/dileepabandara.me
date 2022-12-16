@@ -43,25 +43,21 @@ class AppThemeData {
     ),
     textTheme: const TextTheme(
       displaySmall: TextStyle(
-          fontSize: 48.0,
+          fontSize: 54.0,
+          fontWeight: FontWeight.w700,
+          color: AppThemeData.textWhite),
+      headlineSmall: TextStyle(
+          fontSize: 28.0,
           fontWeight: FontWeight.w700,
           color: AppThemeData.textPrimary),
-      headlineLarge: TextStyle(
-          fontSize: 36.0,
-          fontWeight: FontWeight.w500,
-          color: AppThemeData.textPrimary),
-      headlineSmall: TextStyle(
-          fontSize: 22.0,
-          fontWeight: FontWeight.normal,
-          color: AppThemeData.textPrimary),
       titleLarge: TextStyle(
-          fontSize: 20.0,
+          fontSize: 24.0,
           fontWeight: FontWeight.w500,
-          color: AppThemeData.textPrimary),
-      bodyMedium: TextStyle(
-          fontSize: 16.0,
-          fontWeight: FontWeight.normal,
-          color: AppThemeData.textPrimary),
+          color: AppThemeData.textGreyDark),
+      titleMedium: TextStyle(
+          fontSize: 18.0,
+          fontWeight: FontWeight.w500,
+          color: AppThemeData.textWhite),
     ),
   );
 }

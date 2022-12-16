@@ -1,7 +1,7 @@
 class ConstantValues {
   static const String name = 'Dileepa Bandara';
-  static const String title = 'Student | Developer | Volunteer';
-  static const String greetings = 'Hey everyone, I\'m';
+  static const String title = '#student #developer #volunteer';
+  static const String greetings = 'Hello World! I\'m';
 
   static Uri devURL = Uri.parse('https://dileepabandara.dev');
   static Uri hashnodeURL = Uri.parse('https://hashnode.com/@dileepabandara');

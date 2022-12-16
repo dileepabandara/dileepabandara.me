@@ -2,11 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../theme/constant_values.dart';
 
-
 import '../theme/app_theme.dart';
 
-class Frame8 extends StatelessWidget {
-  const Frame8({Key? key}) : super(key: key);
+class DesktopFrame8 extends StatelessWidget {
+  const DesktopFrame8({Key? key}) : super(key: key);
 
   Widget getSourceCode(BuildContext context) {
     return MouseRegion(
