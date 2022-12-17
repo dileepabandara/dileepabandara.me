@@ -26,7 +26,8 @@ Updated release date - December 11, 2022
 ## 🍃 Branches
 - [main](https://github.com/dileepabandara/dileepabandara.me/tree/main) - Stable and latest version  
 - [web-build](https://github.com/dileepabandara/dileepabandara.me/tree/web-build) - Web build files  
-- [1.0.x](https://github.com/dileepabandara/dileepabandara.me/tree/1.0.x) - Project versions  
+- [1.0.x](https://github.com/dileepabandara/dileepabandara.me/tree/1.0.x) - Project version 1.0.x  
+- [1.1.x](https://github.com/dileepabandara/dileepabandara.me/tree/1.1.x) - Project version 1.1.x
 
 ## 💙 Built With
 - [Flutter](https://flutter.dev)  
