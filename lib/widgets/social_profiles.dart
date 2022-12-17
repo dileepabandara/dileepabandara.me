@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../theme/constant_values.dart';
+import '../statics/data_values.dart';
 import 'button_icon.dart';
 
 class SocialProfiles extends StatelessWidget {
@@ -11,30 +11,27 @@ class SocialProfiles extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        ButtonIcon(name: 'dev', url: ConstantValues.devURL).returnButton(),
+        ButtonIcon(name: 'dev', url: DataValues.devURL).returnButton(),
         const SizedBox(width: 10.0),
-        ButtonIcon(name: 'hashnode', url: ConstantValues.hashnodeURL)
+        ButtonIcon(name: 'hashnode', url: DataValues.hashnodeURL)
             .returnButton(),
         const SizedBox(width: 10.0),
-        ButtonIcon(name: 'github', url: ConstantValues.githubURL)
+        ButtonIcon(name: 'github', url: DataValues.githubURL).returnButton(),
+        const SizedBox(width: 10.0),
+        ButtonIcon(name: 'linkedin', url: DataValues.linkedinURL)
             .returnButton(),
         const SizedBox(width: 10.0),
-        ButtonIcon(name: 'linkedin', url: ConstantValues.linkedinURL)
+        ButtonIcon(name: 'twitter', url: DataValues.twitterURL).returnButton(),
+        const SizedBox(width: 10.0),
+        ButtonIcon(name: 'youtube', url: DataValues.youtubeURL).returnButton(),
+        const SizedBox(width: 10.0),
+        ButtonIcon(name: 'telegram', url: DataValues.telegramURL)
             .returnButton(),
         const SizedBox(width: 10.0),
-        ButtonIcon(name: 'twitter', url: ConstantValues.twitterURL)
+        ButtonIcon(name: 'facebook', url: DataValues.facebookURL)
             .returnButton(),
         const SizedBox(width: 10.0),
-        ButtonIcon(name: 'youtube', url: ConstantValues.youtubeURL)
-            .returnButton(),
-        const SizedBox(width: 10.0),
-        ButtonIcon(name: 'telegram', url: ConstantValues.telegramURL)
-            .returnButton(),
-        const SizedBox(width: 10.0),
-        ButtonIcon(name: 'facebook', url: ConstantValues.facebookURL)
-            .returnButton(),
-        const SizedBox(width: 10.0),
-        ButtonIcon(name: 'instagram', url: ConstantValues.instagramURL)
+        ButtonIcon(name: 'instagram', url: DataValues.instagramURL)
             .returnButton(),
       ],
     );

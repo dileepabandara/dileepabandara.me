@@ -1,14 +1,9 @@
-import 'dart:developer';
-
-import 'package:dileepabandara_me/theme/app_theme.dart';
-import 'package:dileepabandara_me/widgets/button_rectangle.dart';
-import 'package:dileepabandara_me/widgets/button_text.dart';
-import 'package:dileepabandara_me/widgets/social_profiles.dart';
 import 'package:flutter/material.dart';
 
-import '../theme/constant_values.dart';
-import '../theme/responsive_screen_provider.dart';
+import '../statics/data_values.dart';
+import '../theme/app_theme.dart';
 import '../widgets/nav_bar.dart';
+import '../widgets/social_profiles.dart';
 
 class DesktopFrame1 extends StatelessWidget {
   const DesktopFrame1({Key? key}) : super(key: key);
@@ -20,15 +15,15 @@ class DesktopFrame1 extends StatelessWidget {
       Column(
         children: [
           SelectableText(
-            ConstantValues.greetings,
+            DataValues.greetings,
             style: Theme.of(context).textTheme.headlineSmall,
           ),
           SelectableText(
-            ConstantValues.name,
+            DataValues.name,
             style: Theme.of(context).textTheme.displaySmall,
           ),
           SelectableText(
-            ConstantValues.title,
+            DataValues.title,
             style: Theme.of(context).textTheme.titleLarge,
           ),
           const SizedBox(height: 20.0),
@@ -40,17 +35,20 @@ class DesktopFrame1 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-        padding: const EdgeInsets.only(top: 60.0, bottom: 40.0),
-        child: Column(
-          children: [
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: headerData(context),
-            ),
-            const SizedBox(height: 60.0),
-            NavBar().desktopNavBar(),
-          ],
-        ));
+    return Container(
+      color: AppThemeData.backgroundBlack,
+      child: Padding(
+          padding: const EdgeInsets.only(top: 60.0, bottom: 40.0),
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: headerData(context),
+              ),
+              const SizedBox(height: 60.0),
+              NavBar().desktopNavBar(),
+            ],
+          )),
+    );
   }
 }

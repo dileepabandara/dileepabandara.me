@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-import '../theme/constant_values.dart';
 
+import '../statics/data_values.dart';
 import '../theme/app_theme.dart';
 
 class DesktopFrame8 extends StatelessWidget {
@@ -12,10 +12,10 @@ class DesktopFrame8 extends StatelessWidget {
       cursor: SystemMouseCursors.click,
       child: GestureDetector(
         onTap: () {
-          launchUrl(ConstantValues.repoURL);
+          launchUrl(DataValues.repoURL);
         },
         child: Tooltip(
-          message: ConstantValues.repoURL.toString(),
+          message: DataValues.repoURL.toString(),
           child: Text(
             'Get Source Code',
             style: TextStyle(
@@ -44,7 +44,7 @@ class DesktopFrame8 extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               SelectableText(
-                ConstantValues.builtWith,
+                DataValues.builtWith,
                 style: Theme.of(context).textTheme.bodyMedium,
               ),
               const SizedBox(
@@ -57,7 +57,7 @@ class DesktopFrame8 extends StatelessWidget {
             height: 10,
           ),
           SelectableText(
-            ConstantValues.copyright,
+            DataValues.copyright,
             style: Theme.of(context).textTheme.bodyMedium,
           ),
           const SizedBox(

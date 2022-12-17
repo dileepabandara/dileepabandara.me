@@ -1,4 +1,4 @@
-class ConstantValues {
+class DataValues {
   static const String name = 'Dileepa Bandara';
   static const String title = '#student #developer #volunteer';
   static const String greetings = 'Hello World! I\'m';

@@ -1,5 +1,6 @@
-import 'package:dileepabandara_me/theme/app_theme.dart';
 import 'package:flutter/material.dart';
+
+import '../theme/app_theme.dart';
 
 class ButtonRectangle extends StatelessWidget {
   final String name;
